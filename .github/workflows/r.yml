@@ -1,0 +1,12 @@
+name: remote reusable
+on:
+  workflow_call:
+    inputs:
+      foo:
+        type: string
+        required: false
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo remote
